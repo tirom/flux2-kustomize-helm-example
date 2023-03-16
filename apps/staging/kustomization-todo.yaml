@@ -3,5 +3,3 @@ kind: Kustomization
 namespace: todo
 resources:
   - ../base/todo
-# patchesStrategicMerge:
-#   - todo-values.yaml
