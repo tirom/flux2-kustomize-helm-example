@@ -5,4 +5,16 @@ metadata:
   namespace: todo
 spec:
   interval: 5m
-  url: https://hdb-helm-charts.s3.us-east-1.amazonaws.com/charts
+  url:  https://gitlab.com/api/v4/projects/50771559/packages/helm/stable
+  # url: https://hdb-helm-charts.s3.us-east-1.amazonaws.com/charts
+  secretRef:
+    name: gitlab-packageregistry-user
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: gitlab-packageregistry-user
+  namespace: todo
+stringData:
+  username: phongnhu
+  password: glpat-gc2FUzbuh5ydLxJ5DZNs

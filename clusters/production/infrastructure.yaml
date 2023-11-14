@@ -32,6 +32,7 @@ spec:
   path: ./infrastructure/configs
   prune: true
   patches:
+    # replace the Let's Encrypt server value to point to the production API
     - patch: |
         - op: replace
           path: /spec/acme/server

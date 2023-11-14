@@ -25,11 +25,11 @@ spec:
   chart:
     spec:
       chart: cert-manager
-      version: "1.x"
+      version: "1.x" #If the new chart version that matches the 1.x semver range is found, Flux will upgrade the release.
       sourceRef:
         kind: HelmRepository
         name: cert-manager
         namespace: cert-manager
-      interval: 12h
+      interval: 12h #configure Flux to pull the Helm repository index every twelfth hours to check for updates
   values:
     installCRDs: true
