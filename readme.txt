@@ -50,6 +50,7 @@ flux bootstrap github \
 ✔ source-controller: deployment ready
 ✔ all components are healthy
 
+flux get helmreleases --all-namespaces
 kubectl get Kustomization -n flux-system
 kubectl get po -n flux-system
 kubectl get po -n cert-manager

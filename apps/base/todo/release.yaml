@@ -7,7 +7,7 @@ spec:
   releaseName: todo
   chart:
     spec:
-      chart: todo
+      chart: todo-app
       sourceRef:
         kind: HelmRepository
         name: todo
